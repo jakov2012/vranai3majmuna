@@ -1,148 +1,115 @@
-/* Pocetna */
-.pocetna {
-    position: relative;
-    width: 1333px;
-    height: 833px;
-    background: #FFFFFF;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f8f8ff;
+    color: #222;
 }
 
-/* Mini TVZ */
-.mini-tvz {
-    position: absolute;
-    width: 212px;
-    height: 66px;
-    left: 45px;
-    top: 34px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
-    color: #503FED;
-}
-
-/* Rectangle 5 */
-.rectangle-5 {
-    position: absolute;
-    width: 219px;
-    height: 59px;
-    left: 1044px;
-    top: 52px;
-    background: #5E6CFF;
-}
-
-/* Prijavi se */
-.prijavi-se {
-    position: absolute;
-    width: 216px;
-    height: 53px;
-    left: 1065px;
-    top: 67px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    color: #000000;
-}
-
-/* Dugmad */
-.button-group {
-    position: absolute;
-    top: 93px;
-    left: 106px;
+header {
+    background: #503fed;
+    color: #fff;
+    padding: 20px 0;
     display: flex;
-    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
-.button {
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    background: #5e6cff;
+    padding: 8px 18px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+header nav a:hover {
+    background: #3c2eb7;
+}
+
+main {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    width: 101px;
-    height: 32px;
-    background: #6750A4;
-    border-radius: 100px;
-}
-
-.button .icon {
-    width: 20px;
-    height: 20px;
-    background: #FFFFFF;
-    margin-right: 8px;
-    border-radius: 50%;
-}
-
-.button .label {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.1px;
-    color: #FFFFFF;
-}
-
-/* Progress bar */
-.progress-bar {
-    position: absolute;
-    width: 89px;
-    height: 12px;
-    left: 204px;
-    top: 157px;
-    display: flex;
     align-items: flex-start;
+    min-height: 80vh;
+    padding: 40px 0;
 }
 
-.track {
-    width: 89px;
-    height: 12px;
-    position: relative;
-}
-
-.track-shape {
-    position: absolute;
-    height: 4px;
-    left: 0;
-    right: 0;
-    top: 4px;
-    background: #E8DEF8;
-    border-radius: 2px;
+.radionica {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(80, 63, 237, 0.08);
+    padding: 32px 36px;
+    max-width: 500px;
     width: 100%;
 }
 
-/* Opis */
-.opis {
-    position: absolute;
-    width: 624px;
-    height: 449px;
-    left: 56px;
-    top: 254px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
-    color: #000000;
+.radionica h2 {
+    margin-top: 0;
+    color: #503fed;
+    font-size: 1.7rem;
 }
 
-/* Slika */
-
-.slika {
-    position: absolute;
-    width: 509px;
-    height: 339px;
-    left: 754px;
-    top: 254px;
+.radionica ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 18px;
 }
 
-.privola-label {
+.radionica li {
+    margin-bottom: 8px;
+    background: #e8def8;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+.prijava-forma {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(80, 63, 237, 0.08);
+    padding: 32px 36px;
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+.prijava-forma h2 {
+    color: #503fed;
+}
+
+.prijava-forma form {
     display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 0.98rem;
-    margin-bottom: 10px;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.prijava-forma input[type="text"],
+.prijava-forma input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.prijava-forma button {
+    background: #5e6cff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.prijava-forma button:hover {
+    background: #3c2eb7;
 }
