@@ -202,3 +202,133 @@ img {
     border-radius: 6px;
     font-size: 1rem;
 }
+
+
+.radionice {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 2vw;
+}
+
+.radionice h2 {
+    text-align: center;
+    color: #503fed;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.radionica-kartica {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(80, 63, 237, 0.08);
+    padding: 22px 22px 16px 22px;
+    margin-bottom: 28px;
+    max-width: 600px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.radionica-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.radionica-info > div:first-child {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.radionica-gumb-wrap {
+    display: flex;
+    align-items: center;
+    min-width: 120px;
+    margin-left: 10px;
+}
+
+.prijava-gumb {
+    display: inline-block;
+    background: #5e6cff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.2s;
+    font-size: 1rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.prijava-gumb:hover {
+    background: #3c2eb7;
+}
+
+.radionica-kartica h3 {
+    color: #503fed;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+.radionica-kartica p {
+    margin-bottom: 12px;
+}
+
+.radionica-kartica ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.radionica-kartica li {
+    background: #e8def8;
+    padding: 7px 12px;
+    border-radius: 6px;
+    margin-bottom: 7px;
+    font-size: 1rem;
+}
+
+/* Responzivnost */
+@media (max-width: 700px) {
+    .radionica-kartica {
+        padding: 14px 6px 10px 6px;
+    }
+    .radionice h2 {
+        font-size: 1.3rem;
+    }
+    .radionica-info {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+    .radionica-gumb-wrap {
+        justify-content: flex-start;
+        margin-left: 0;
+        margin-top: 12px;
+    }
+}
+.radionica-desno {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-width: 140px;
+    gap: 10px;
+}
+
+.popunjenost {
+    background: #e8def8;
+    color: #503fed;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 7px 12px;
+    font-size: 1rem;
+    margin-bottom: 4px;
+    text-align: right;
+}
+
+.popunjenost.puna {
+    background: #ffe6e6;
+    color: #b20000;
+}
