@@ -345,3 +345,16 @@ img {
     min-width: 100px;
     box-sizing: border-box;
 }
+
+.prijave-zatvorene {
+    background: #ffe6e6;
+    color: #b20000;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 10px 22px;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 4px;
+    min-width: 100px;
+    box-sizing: border-box;
+}
