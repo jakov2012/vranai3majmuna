@@ -1,1 +1,35 @@
-<!DOCTYPE html><html><head><link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" /><link href="./css/main.css" rel="stylesheet" /><title>Document</title></head><body><div class="v9_280"><span class="v9_281">PRIJAVA</span><div class="name"></div></div></body></html>
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Prijava</title>
+    <link rel="stylesheet" href="glavno.css">
+</head>
+<body>
+    <header>
+        <h1>Mini TVZ</h1>
+        <nav>
+            <a href="index.html">Naslovnica</a>
+        </nav>
+    </header>
+    <main>
+        <section class="prijava-forma">
+            <h2>Prijava na radionicu</h2>
+            <form>
+                <label for="ime">Ime i prezime:</label>
+                <input type="text" id="ime" name="ime" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label class="privola-label">
+                    <input type="checkbox" id="privola" name="privola" required>
+                    Slažem se s obradom osobnih podataka u svrhu prijave na radionicu.
+                </label>
+
+                <button type="submit">Pošalji prijavu</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
