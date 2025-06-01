@@ -1,24 +1,30 @@
-body {
-    font-family: Arial, sans-serif;
+/* Osnovni reset i postavke */
+* {
+    box-sizing: border-box;
     margin: 0;
-    background: #f8f8ff;
-    color: #222;
+    padding: 0;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f8ff;
+    color: #222;
+    min-height: 100vh;
+}
+
+/* Header */
 header {
     background: #503fed;
     color: #fff;
-    padding: 20px 0;
+    padding: 20px 5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 
 header h1 {
-    margin: 0;
     font-size: 2rem;
+    margin: 0;
 }
 
 header nav a {
@@ -29,33 +35,37 @@ header nav a {
     padding: 8px 18px;
     border-radius: 6px;
     transition: background 0.2s;
+    font-size: 1rem;
 }
 
 header nav a:hover {
     background: #3c2eb7;
 }
 
+/* Glavni sadržaj */
 main {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     min-height: 80vh;
-    padding: 40px 0;
+    padding: 40px 5vw;
 }
 
-.radionica {
+/* Sekcija radionica */
+.radionica, .prijava-forma {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 12px rgba(80, 63, 237, 0.08);
-    padding: 32px 36px;
+    padding: 32px 24px;
     max-width: 500px;
     width: 100%;
+    margin: 0 auto;
 }
 
-.radionica h2 {
-    margin-top: 0;
+.radionica h2, .prijava-forma h2 {
     color: #503fed;
-    font-size: 1.7rem;
+    margin-bottom: 14px;
+    font-size: 1.5rem;
 }
 
 .radionica ul {
@@ -71,19 +81,8 @@ main {
     border-radius: 6px;
     font-size: 1rem;
 }
-.prijava-forma {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 12px rgba(80, 63, 237, 0.08);
-    padding: 32px 36px;
-    max-width: 400px;
-    margin: 40px auto;
-}
 
-.prijava-forma h2 {
-    color: #503fed;
-}
-
+/* Forma za prijavu */
 .prijava-forma form {
     display: flex;
     flex-direction: column;
@@ -92,10 +91,11 @@ main {
 
 .prijava-forma input[type="text"],
 .prijava-forma input[type="email"] {
-    padding: 8px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 1rem;
+    width: 100%;
 }
 
 .prijava-forma button {
@@ -108,15 +108,67 @@ main {
     font-weight: bold;
     cursor: pointer;
     transition: background 0.2s;
+    margin-top: 10px;
 }
 
 .prijava-forma button:hover {
     background: #3c2eb7;
 }
+
 .privola-label {
     display: flex;
     align-items: center;
     gap: 10px;
     font-size: 0.98rem;
     margin-bottom: 10px;
+    user-select: none;
+}
+
+/* Fluidne slike */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* MEDIA QUERIES ZA RESPONZIVNOST */
+@media (max-width: 700px) {
+    header, main {
+        flex-direction: column;
+        align-items: stretch;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+    .radionica, .prijava-forma {
+        padding: 24px 8px;
+        max-width: 100%;
+    }
+    header {
+        padding: 16px 4vw;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 2vw;
+    }
+    header h1 {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+    }
+    header nav a {
+        font-size: 0.95rem;
+        padding: 8px 12px;
+    }
+    main {
+        padding: 16px 2vw;
+    }
+    .radionica h2, .prijava-forma h2 {
+        font-size: 1.1rem;
+    }
+    .radionica, .prijava-forma {
+        padding: 12px 2vw;
+    }
 }
