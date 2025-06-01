@@ -130,10 +130,124 @@
 }
 
 /* Slika */
+
 .slika {
     position: absolute;
     width: 509px;
     height: 339px;
     left: 754px;
     top: 254px;
+}
+
+
+/*JAKOV RADIONICE*/
+
+.container {
+  position: relative;
+  width: 1333px;
+  height: 910px;
+  background: #FFFFFF;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.title {
+  position: absolute;
+  width: 212px;
+  height: 66px;
+  left: 73px;
+  top: 31px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #503FED;
+}
+.workshop-list {
+  position: absolute;
+  width: 820px;
+  top: 222px;
+  left: 13px;
+}
+
+.workshop {
+  width: 820px;
+  height: 204px;
+  background: white;
+  border: 4px solid #1E1E1E;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.workshop h3 {
+  position: absolute;
+  left: 163px;
+  top: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  width: 275px;
+}
+
+.workshop-meta {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+}
+
+.date {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.slots {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+/* Ovdje možeš dodati i pozadinske pravokutnike za broj prijava ako želiš vizualno označiti */
+
+.workshop-details {
+  position: absolute;
+  width: 282px;
+  height: 82px;
+  left: 772px;
+  top: 380px;
+  background: #3DB4FE;
+  border-radius: 8px;
+  padding: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.professor-label {
+  position: absolute;
+  width: 176px;
+  height: 36px;
+  left: 1199px;
+  top: 76px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+  color: #000000;
 }
