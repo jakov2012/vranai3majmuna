@@ -172,3 +172,33 @@ img {
         padding: 12px 2vw;
     }
 }
+
+.lokacije {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(80, 63, 237, 0.08);
+    padding: 28px 24px;
+    max-width: 500px;
+    width: 100%;
+    margin: 32px auto 0 auto;
+}
+
+.lokacije h2 {
+    color: #503fed;
+    margin-bottom: 14px;
+    font-size: 1.3rem;
+}
+
+.lokacije ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lokacije li {
+    margin-bottom: 14px;
+    background: #e8def8;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 1rem;
+}
