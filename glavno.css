@@ -113,3 +113,10 @@ main {
 .prijava-forma button:hover {
     background: #3c2eb7;
 }
+.privola-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.98rem;
+    margin-bottom: 10px;
+}
