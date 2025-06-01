@@ -1,0 +1,139 @@
+/* Pocetna */
+.pocetna {
+    position: relative;
+    width: 1333px;
+    height: 833px;
+    background: #FFFFFF;
+}
+
+/* Mini TVZ */
+.mini-tvz {
+    position: absolute;
+    width: 212px;
+    height: 66px;
+    left: 45px;
+    top: 34px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #503FED;
+}
+
+/* Rectangle 5 */
+.rectangle-5 {
+    position: absolute;
+    width: 219px;
+    height: 59px;
+    left: 1044px;
+    top: 52px;
+    background: #5E6CFF;
+}
+
+/* Prijavi se */
+.prijavi-se {
+    position: absolute;
+    width: 216px;
+    height: 53px;
+    left: 1065px;
+    top: 67px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+/* Dugmad */
+.button-group {
+    position: absolute;
+    top: 93px;
+    left: 106px;
+    display: flex;
+    gap: 15px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 101px;
+    height: 32px;
+    background: #6750A4;
+    border-radius: 100px;
+}
+
+.button .icon {
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.button .label {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+/* Progress bar */
+.progress-bar {
+    position: absolute;
+    width: 89px;
+    height: 12px;
+    left: 204px;
+    top: 157px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.track {
+    width: 89px;
+    height: 12px;
+    position: relative;
+}
+
+.track-shape {
+    position: absolute;
+    height: 4px;
+    left: 0;
+    right: 0;
+    top: 4px;
+    background: #E8DEF8;
+    border-radius: 2px;
+    width: 100%;
+}
+
+/* Opis */
+.opis {
+    position: absolute;
+    width: 624px;
+    height: 449px;
+    left: 56px;
+    top: 254px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+}
+
+/* Slika */
+.slika {
+    position: absolute;
+    width: 509px;
+    height: 339px;
+    left: 754px;
+    top: 254px;
+}
